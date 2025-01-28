@@ -52,13 +52,13 @@ Agent przypomnień SMS to aplikacja do zarządzania korepetycjami, wysyłania au
 
 W katalogu głównym projektu utwórz plik .env i uzupełnij go następującymi danymi:
 
-    ```plaintext
+  ```plaintext
     MONGO_URI=your_mongodb_connection_string
     PORT=3000
     TWILIO_ACCOUNT_SID=your_twilio_account_sid
     TWILIO_AUTH_TOKEN=your_twilio_auth_token
     TWILIO_PHONE_NUMBER=your_twilio_phone_number
-    ```
+  ```
 
 2. Google Calendar API
 
