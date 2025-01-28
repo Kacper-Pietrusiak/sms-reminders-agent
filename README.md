@@ -34,7 +34,7 @@ Agent przypomnień SMS to aplikacja do zarządzania korepetycjami, wysyłania au
 1. **Sklonuj repozytorium:**
 
    ```bash
-   git clone https://github.com/username/sms-reminders-agent.git
+   git clone https://github.com/Kacper-Pietrusiak/sms-reminders-agent.git
    cd sms-reminders-agent
 
    ```
