@@ -1,0 +1,36 @@
+# Ignorowanie node_modules
+node_modules/
+
+# Ignorowanie plików logów
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignorowanie środowiska lokalnego
+.env
+
+# Ignorowanie plików generowanych przez system operacyjny
+.DS_Store
+Thumbs.db
+
+# Ignorowanie danych uwierzytelniających
+credentials.json
+token.json
+
+# Ignorowanie plików konfiguracyjnych edytorów
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Ignorowanie buildów
+dist/
+build/
+
+# Ignorowanie plików cache
+*.cache
+*.log
+
+# Ignorowanie zależności wynikowych
+package-lock.json
+yarn.lock
