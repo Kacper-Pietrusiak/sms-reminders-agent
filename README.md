@@ -62,16 +62,16 @@ W katalogu głównym projektu utwórz plik .env i uzupełnij go następującymi 
 
 2. Google Calendar API
 
-- Pobierz plik credentials.json z Google Cloud Console.
-- Umieść plik credentials.json w katalogu głównym projektu.
-- Uruchom autoryzację:
+  - Pobierz plik credentials.json z Google Cloud Console.
+  - Umieść plik credentials.json w katalogu głównym projektu.
+  - Uruchom autoryzację:
 
   ```bash
   node authorize.js
   ```
 
-- Otwórz podany URL, zaloguj się na swoje konto Google, zezwól aplikacji na dostęp do Kalendarza Google, a następnie wklej kod autoryzacyjny w terminalu.
-- Token zostanie zapisany w pliku token.json.
+  - Otwórz podany URL, zaloguj się na swoje konto Google, zezwól aplikacji na dostęp do Kalendarza Google, a następnie wklej kod autoryzacyjny w terminalu.
+  - Token zostanie zapisany w pliku token.json.
 
 ## 🚀 Uruchomienie
 
@@ -87,8 +87,8 @@ Serwer będzie dostępny pod adresem http://localhost:3000.
 
 1. ➕ Dodanie ucznia
 
-- Endpoint: POST /students
-- Body (JSON):
+  - Endpoint: POST /students
+  - Body (JSON):
 
   ```json
   {
@@ -98,7 +98,7 @@ Serwer będzie dostępny pod adresem http://localhost:3000.
   }
   ```
 
-- Odpowiedź:
+  - Odpowiedź:
 
   ```json
   {
@@ -115,8 +115,8 @@ Serwer będzie dostępny pod adresem http://localhost:3000.
 
 2. 📄 Pobranie listy uczniów
 
-- Endpoint: GET /students
-- Odpowiedź:
+  - Endpoint: GET /students
+  - Odpowiedź:
 
   ```json
   [
@@ -132,8 +132,8 @@ Serwer będzie dostępny pod adresem http://localhost:3000.
 
 3. 🗓️ Dodanie zajęć
 
-- Endpoint: POST /schedules
-- Body (JSON):
+  - Endpoint: POST /schedules
+  - Body (JSON):
 
   ```json
   {
@@ -142,7 +142,7 @@ Serwer będzie dostępny pod adresem http://localhost:3000.
   }
   ```
 
-- Odpowiedź:
+  - Odpowiedź:
 
   ```json
   {
@@ -159,8 +159,8 @@ Serwer będzie dostępny pod adresem http://localhost:3000.
 
 4. 📃 Pobranie listy zajęć
 
-- Endpoint: GET /schedules
-- Odpowiedź:
+  - Endpoint: GET /schedules
+  - Odpowiedź:
 
   ```json
   [
@@ -184,8 +184,8 @@ Serwer będzie dostępny pod adresem http://localhost:3000.
 
 1. Konfiguracja Twilio
 
-- Zaloguj się na Twilio Console.
-- Skopiuj swoje ACCOUNT SID oraz AUTH TOKEN i umieść je w pliku .env:
+  - Zaloguj się na Twilio Console.
+  - Skopiuj swoje ACCOUNT SID oraz AUTH TOKEN i umieść je w pliku .env:
 
   ```plaintext
   TWILIO_ACCOUNT_SID=your_twilio_account_sid
@@ -193,11 +193,11 @@ Serwer będzie dostępny pod adresem http://localhost:3000.
   TWILIO_PHONE_NUMBER=your_twilio_phone_number
   ```
 
-- Upewnij się, że numer telefonu ucznia jest w formacie międzynarodowym, np. +48.
+  - Upewnij się, że numer telefonu ucznia jest w formacie międzynarodowym, np. +48.
 
 2. Funkcja Wysyłania SMS
 
-- Wysyłanie SMS jest realizowane przez funkcję sendSMS w pliku utils/sendSMS.js:
+  - Wysyłanie SMS jest realizowane przez funkcję sendSMS w pliku utils/sendSMS.js:
 
   ```javascript
   const twilio = require("twilio");
@@ -222,7 +222,7 @@ Serwer będzie dostępny pod adresem http://localhost:3000.
 
 3. Automatyczne Powiadomienia
 
-- W harmonogramie przypomnień (scheduler.js), SMS-y są wysyłane automatycznie przed zajęciami:
+  - W harmonogramie przypomnień (scheduler.js), SMS-y są wysyłane automatycznie przed zajęciami:
 
   ```javascript
   schedules.forEach(async (schedule) => {
@@ -242,19 +242,19 @@ Serwer będzie dostępny pod adresem http://localhost:3000.
 
 1. Problem z MongoDB:
 
-- Upewnij się, że MONGO_URI w .env wskazuje na poprawny adres.
+  - Upewnij się, że MONGO_URI w .env wskazuje na poprawny adres.
 
 2. Problem z Google API:
 
-- Upewnij się, że credentials.json i token.json są poprawnie skonfigurowane.
+  - Upewnij się, że credentials.json i token.json są poprawnie skonfigurowane.
 
 3. Problem z Twilio:
 
-- Sprawdź, czy TWILIO_ACCOUNT_SID i TWILIO_AUTH_TOKEN są poprawne.
+  - Sprawdź, czy TWILIO_ACCOUNT_SID i TWILIO_AUTH_TOKEN są poprawne.
 
 4. Logi Serwera:
 
-- Uruchom aplikację i sprawdź logi:
+  - Uruchom aplikację i sprawdź logi:
 
   ```bash
   node server.js
