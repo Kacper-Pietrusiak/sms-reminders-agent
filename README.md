@@ -243,14 +243,17 @@ Serwer będzie dostępny pod adresem http://localhost:3000.
 1. Problem z MongoDB:
 
   - Upewnij się, że MONGO_URI w .env wskazuje na poprawny adres.
+    
 
 2. Problem z Google API:
 
   - Upewnij się, że credentials.json i token.json są poprawnie skonfigurowane.
+    
 
 3. Problem z Twilio:
 
   - Sprawdź, czy TWILIO_ACCOUNT_SID i TWILIO_AUTH_TOKEN są poprawne.
+    
 
 4. Logi Serwera:
 
